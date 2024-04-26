@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ingresoAnimales>
+    <perro>
+        <edad>2 años</edad>
+        <raza>Schnauzer</raza>
+    </perro>
+    <gato>
+        <edad>1 años</edad>
+        <raza>Siamés</raza>
+    </gato>
+    <lagartija>
+        <edad>6 meses</edad>
+        <raza>Pug</raza>
+    </lagartija>
+    <conejo>
+        <edad>9 meses</edad>
+        <raza>Conejo Holandés</raza>
+    </conejo>
+</ingresoAnimales>

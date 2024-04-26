@@ -28,3 +28,6 @@ share/
 
 # Archivos de registro
 *.log
+
+# Archivos de caché que esten en cualquier subcarpeta
+__pycache__/

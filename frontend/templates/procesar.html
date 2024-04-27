@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+{% include 'components/head.html' with titulo="Procesar Datos" %}
+
+<body>
+  <div class="container">
+    {% include 'components/sidebar.html' %}
+    <div class="main">
+      <h1>Datos Procesados</h1>
+      <button id="procesar-datos">Procesar Datos</button>
+      <p>Resultados del procesamiento:</p>
+      {% include 'components/loading.html' %}
+      <pre id="resultados-pre"></pre>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 Tienda de mascotas</p>
+  </div>
+</body>
+
+</html>

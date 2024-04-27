@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+
+{% include 'components/head.html' with titulo="Cargar Datos" %}
+<body>
+  <div class="container">
+    {% include 'components/sidebar.html' %}
+    <div class="main">
+      <!-- Aquí va el contenido principal -->
+      <h1>Cargar Mascotas</h1>
+      <!-- input tipo file que admita solo xml -->
+      <p for="archivo">Archivo XML:</p>
+      <textarea name="carga" id="textarea" cols="30" rows="10"></textarea>
+      <button type="button" id="subir-btn">Cargar</button>
+      <p>Resultados del procesamiento:</p>
+      {% include 'components/loading.html' %}
+      <pre id="resultados-pre"></pre>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 Tienda de mascotas</p>
+  </div>
+</body>
+
+</html>

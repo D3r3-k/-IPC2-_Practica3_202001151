@@ -1,0 +1,18 @@
+{% load static %}
+<head>
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/global.js' %}" defer></script>
+
+    {% if request.path == '/borrar/' %}
+    <script src="{% static 'js/borrar.js' %}" defer></script>
+    {% endif %}
+
+    {%  if request.path == '/cargar/' %}
+    <script src="{% static 'js/cargar.js' %}" defer></script>
+    {% endif %}
+
+    {%  if request.path == '/procesar/' %}
+    <script src="{% static 'js/procesar.js' %}" defer></script>
+    {% endif %}
+</head>

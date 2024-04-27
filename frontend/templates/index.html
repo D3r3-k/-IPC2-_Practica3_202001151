@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+
+{% include 'components/head.html' with titulo="Mis Mascotitas" %}
+<body>
+  <div class="container">
+    {% include 'components/sidebar.html' %}
+    <div class="main">
+      <!-- Aquí va el contenido principal -->
+      <h1>Bienvenido</h1>
+      <p>Selecciona una opción</p>
+      <div class="grid-4-2">
+        <div class="card"><a href="/borrar"><span>Borrar Datos</span></a></div>
+        <div class="card"><a href="/cargar"><span>Cargar Datos</span></a></div>
+        <div class="card"><a href="/procesar"><span>Ver Datos Procesados</span></a></div>
+        <div class="card"><a href="/estudiante"><span>Ver Datos del Estudiante</span></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 Tienda de mascotas</p>
+  </div>
+</body>
+
+</html>

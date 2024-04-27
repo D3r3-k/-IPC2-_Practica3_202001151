@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+
+{% include 'components/head.html' with titulo="Datos del Estudiante" %}
+<body>
+  <div class="container">
+    {% include 'components/sidebar.html' %}
+    <div class="main">
+      <h1>Datos del Estudiante</h1>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="Derek Francisco Orellana Ibáñez" readonly>
+        <label for="carne">Carnet:</label>
+        <input type="text" id="carne" name="carne" value="202001151" readonly>
+      </form>
+
+      <div class="logo">
+        <img src="{% static 'assets/logo_usac2018.svg' %}" alt="Logo de la universidad">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2021 Tienda de mascotas</p>
+  </div>
+</body>
+
+</html>
